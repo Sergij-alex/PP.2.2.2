@@ -28,8 +28,6 @@ public class CarServiseImpl implements CarServise {
             a = 0;
         }
 
-        List<Car> selectedCars = cars.subList(0, a);
-
-        return selectedCars;
+        return cars.subList(0, a);
     }
 }
