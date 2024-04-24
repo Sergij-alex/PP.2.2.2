@@ -1,14 +1,14 @@
-package web.Dao;
+package web.dao;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Component
-public class CarsDao {
+@Repository
+public class CarsDaoImp implements CarsDao{
 
     private final List<Car> cars;
 
@@ -23,6 +23,7 @@ public class CarsDao {
 
     }
 
+    @Override
     public List<Car> getAllCars() {
         return cars;
     }
